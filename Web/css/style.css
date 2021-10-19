@@ -1,0 +1,452 @@
+/* 
+=======================================
+Removing some bootstrap default styles
+=======================================
+*/
+
+ *,
+ *:before,
+ *:after{
+ 	margin: 0;
+ 	padding: 0;
+ 	box-sizing: border-box;
+ }
+
+:active,
+:hover,
+:focus{
+    outline: 0 !important;
+    outline-offset: 0;
+}
+
+a,
+a:hover{
+    text-decoration: none;
+}
+
+a:hover{
+color: var(--primary-color) !important;
+}
+
+ul,
+ol{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*
+====== Variables ======
+*/
+
+:root{
+   /*  --primary-color: #A82C48; */
+    --primary-color: #48aad9;
+   /*  --secondary-color: #247399; */
+    --secondary-color: #1e4c87;
+    --third-color: #f98169;
+    --text-color: #555;
+    --text-grey: #999;
+    --primary-font: "Roboto","sans-serif";
+}
+
+body{
+    font-family: var(--primary-color);
+    font-size: 100%;
+    font-weight: 400;
+}
+
+
+/* ===== Custom Scroll-bar ===== */
+::-webkit-scrollbar{
+    width: 0.625rem;
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--primary-color);
+}
+
+::-webkit-scrollbar-track{
+    background: white;
+}
+
+/* ===== Making some custom Css as default ===== */
+h1{
+    font-family: sans-serif; 
+    font-weight: 900;
+    margin-bottom: 3rem;
+    font-size: 3rem;
+    color: var(--secondary-color); 
+}
+
+h2{
+    font-weight: 700;
+    font-size: 2.25rem;
+    color: var(--secondary-color);
+    text-transform: capitalize;
+    font-family: cursive; 
+    line-height: 3rem; 
+}
+
+h4{
+    font-weight: 800;
+    font-size: 18px;
+    color: var(--secondary-color);
+    text-transform: capitalize;
+    font-family: "monospace","serif";
+}
+
+h5{
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: var(--primary-color);
+    text-transform: capitalize;
+    font-family: "monospace","serif"; 
+}
+
+p{
+    font-size: 1rem;
+    color: var(--text-color);
+    font-weight: 400;
+    line-height: 1.75rem;
+    letter-spacing: 1px;
+    font-family: cursive;
+} 
+
+.main-btn{
+    display: inline-block;
+    padding: 0.625rem 1.875rem;
+    line-height: 1.5625rem;
+    background-color: var(--primary-color);
+    border: 0.1875rem solid var(--primary-color);
+    color: #fff;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    box-shadow: 0px 2px 10px -1px rgb(0 0 0 / 19%);
+    transition: all .4s ease-out 0s;
+    -webkit-transition: all .4s ease-out 0s;
+    -o-transition: all .4s ease-out 0s;
+    -moz-transition: all .4s ease-out 0s;
+}
+
+.white-btn{
+    padding: 0.625rem 1.875rem;
+    line-height: 25px;
+    background-color: #fff;
+    border: 0.1875rem solid #fff;
+    color: var(--text-color);
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    box-shadow: 0px 2px 10px -1px rgb(0 0 0 / 19%);
+    transition: all .4s ease-out 0s;
+    -webkit-transition: all .4s ease-out 0s;
+    -o-transition: all .4s ease-out 0s;
+    -moz-transition: all .4s ease-out 0s;
+}
+
+.main-btn:hover{
+    background-color: transparent;
+    color: var(--primary-color);
+}
+
+.white-btn:hover{
+    background-color: transparent;
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.wrapper {
+    padding-top: 8.25rem;
+    padding-bottom: 8.25rem;
+}
+
+.text-content{
+    width: 70%;
+    margin: auto;
+}
+
+.counter-section h2,
+.book-food-text h2,
+.testimonal-section h2{
+    color: #fff;
+}
+
+/* 
+=====================
+Designing components
+=====================
+*/
+
+/* 
+====== Header ======
+*/
+
+.navigation-wrap{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    z-index: 1000;
+    transition: all 0.3s ease-out;
+}
+
+.navigation-wrap .nav-item{
+    padding: 0 0.625rem;
+    transition: all 0.2s linear;
+}
+
+.navbar-toggler:focus{
+    outline: unset;
+    border: unset;
+    box-shadow: none;
+}
+
+.nav-link{
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--primary-color);
+    letter-spacing: 1px;
+}
+
+.navigation-wrap .main-btn{
+    padding: 0.3125rem 1.4375rem;
+    box-shadow: none;
+    margin-left: 0.625rem;
+}
+
+/* Navbar styling on scroll */
+
+.navigation-wrap.scroll-on{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0.125rem 1.75rem 0 rgb(0,0,0,0.09);
+    transition: all .15s ease-in-out 0s;
+} 
+
+/* 
+====== Top banner ======
+*/
+
+.top-banner{
+    width: 100%;
+    background: url('../images/bg/bg-1.jpg') no-repeat center;  
+    background-size: cover;
+    padding: 16.875rem 0 9.375rem;
+}
+
+/*
+======= Counter =======
+*/
+
+.counter-section{
+    background-color: var(--primary-color);
+    padding: 2.5rem 0;
+}
+
+.counter-section p{
+    color: #fff;
+    text-transform: uppercase;
+}
+
+/* 
+====== About section ======
+*/
+
+/* First */
+
+.about-section{
+    background-color: #fff;
+}
+
+.about-section .card,
+.about-section .card img{
+    border-radius: 0.625rem;
+}
+
+.about-section .text-sec{
+    padding-left: 2rem;
+}
+
+/* Second */
+
+.course-type{
+    padding-top: 3.25rem;
+}
+
+.course-type ul li{
+    font-size: 1rem;
+    color: var(--text-color);
+    line-height: 32px;
+    position: relative;
+    margin-left: 30px;
+}
+
+/* extra line */
+
+.story-section{
+    width: 100%;
+    height: 28.125rem;
+    background: url('../images/bg/bg-2.jpg') no-repeat center;
+    backface-visibility: 0.5;
+    background-size: cover;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.story-section h2{
+    color: var(--secondary-color);
+}
+
+/*
+ ======= Explore Courses ======
+*/
+
+.explore-course .card{
+    border: none; 
+    border-radius: 0.9375rem;
+    background-color: transparent;
+}
+
+.explore-course .card img{
+    border-radius: 0.9375rem;
+    object-fit: cover;
+}
+
+.explore-course .card span{
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    padding-bottom: 1rem;
+    border-bottom: 0.0625rem solid #eee;
+}
+
+.explore-course .card span del{
+    color: var(--text-grey);
+    margin-left: 0.5rem;
+}
+
+/* 
+====== Testimonial ======
+*/
+.testimonial-section{
+    background-color: var(--primary-color);
+}
+
+.testimonial-section .carousel-item{
+    margin-top: 3rem;
+    padding: 6rem 3.125rem;
+    background-color: #fff;
+    border-radius: 0.9375rem;
+    text-align: center;
+}
+
+.testimonial-section .carousel-item .carousel-caption{
+    position: static;
+    padding: 0;
+}
+
+.testimonial-section .carousel-item .carousel-caption p{
+    font-size: 1.3125rem;
+    line-height: 2.0625rem;
+    padding: 0 11% 0.625rem;
+}
+
+.testimonial-section .carousel-caption img{
+    max-width: 5rem;
+    border-radius: 50%;
+    padding: 0.3125rem;
+}
+
+.testimonial-section .carousel-indicators{
+    bottom: -2.8125rem;
+}
+
+.testimonial-section .carousel-indicators button{
+    width: 15px;
+    height: 15px;
+    outline: none;
+    border-radius: 50%;
+    border: none;
+    margin-right: 1rem;
+    opacity: 0.2;
+}
+
+.testimonial-section .carousel-indicators button.active{
+    opacity: 1;
+} 
+
+/*
+======= Faq section ====== 
+*/
+.faq h4 span{
+    color: var(--primary-color);
+    font-size: 1.875rem;
+    margin-bottom: 0.3125rem;
+}
+
+/*
+===== book course ===== 
+*/
+
+.book-course{
+    width: 100%;
+    background: url('../images/bg/bg-3.jpg') no-repeat center;
+    background-size: cover; 
+    background-attachment: fixed;
+    background-position: 0 71.9125px;
+    padding: 4.375rem 0;
+}
+
+/*
+===== News letter 
+*/
+.newsletter{
+    width: 55%;
+    margin: 0 auto;
+
+}
+
+.newsletter .form-control{
+    height: 3.225rem;
+    padding: 0 1.25rem;
+    font-size: 0.875rem;
+    font-weight: 700;
+    border: 0.1875rem solid var(--text-grey);
+    width: 100%;
+    border-radius: 0;
+    background: transparent;
+    color: #000;
+}
+
+.newsletter .form-control:hover,
+.newsletter .form-control:focus{
+    outline: none;
+    box-shadow: none;
+    border-color: var(--primary-color);
+}
+
+/* Footer */
+
+.footer{
+    background-color: var(--primary-color);
+}
+
+.footer .footer-link{
+    font-size: 1rem;
+    padding: 0 1.875rem;
+    color: #fff;
+}
+
+.footer .footer-link:hover{
+    columns: #fff !important;
+}
