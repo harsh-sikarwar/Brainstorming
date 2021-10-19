@@ -51,6 +51,7 @@ html{
     --text-color: #555;
     --text-grey: #999;
     --primary-font: "Roboto","sans-serif";
+    --secondary-font: "Arial", "courier-new", "Times New Roman";
 }
 
 body{
@@ -75,7 +76,7 @@ body{
 
 /* ===== Making some custom Css as default ===== */
 h1{
-    font-family: sans-serif; 
+    font-family: var(--primary-font); 
     font-weight: 900;
     margin-bottom: 3rem;
     font-size: 3rem;
@@ -87,7 +88,7 @@ h2{
     font-size: 2.25rem;
     color: var(--secondary-color);
     text-transform: capitalize;
-    font-family: cursive; 
+    font-family: var(--primary-font); 
     line-height: 3rem; 
 }
 
@@ -96,7 +97,7 @@ h4{
     font-size: 18px;
     color: var(--secondary-color);
     text-transform: capitalize;
-    font-family: "monospace","serif";
+    font-family: var(--primary-font);
 }
 
 h5{
@@ -105,7 +106,7 @@ h5{
     font-size: 1rem;
     color: var(--primary-color);
     text-transform: capitalize;
-    font-family: "monospace","serif"; 
+    font-family: var(--secondary-font); 
 }
 
 p{
@@ -114,7 +115,7 @@ p{
     font-weight: 400;
     line-height: 1.75rem;
     letter-spacing: 1px;
-    font-family: cursive;
+    font-family: var(--secondary-font);
 } 
 
 .main-btn{
