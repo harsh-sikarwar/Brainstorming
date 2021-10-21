@@ -1,3 +1,6 @@
+/* Importing fonts */
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Crete+Round&family=Rampart+One&display=swap');
+
 /* 
 =======================================
 Removing some bootstrap default styles
@@ -50,8 +53,10 @@ html{
     --third-color: #f98169;
     --text-color: #555;
     --text-grey: #999;
-    --primary-font: "Roboto","sans-serif";
-    --secondary-font: "Arial", "courier-new", "Times New Roman";
+    --primary-font: 'Rampart One', 'cursive';
+    --secondary-font: 'Bebas Neue', cursive;
+    --paragraph-font:  'Crete Round', serif;
+  /*   font-family: 'Anton', sans-serif; */
 }
 
 body{
@@ -97,7 +102,7 @@ h4{
     font-size: 18px;
     color: var(--secondary-color);
     text-transform: capitalize;
-    font-family: var(--primary-font);
+    font-family: var(--secondary-font);
 }
 
 h5{
@@ -115,7 +120,7 @@ p{
     font-weight: 400;
     line-height: 1.75rem;
     letter-spacing: 1px;
-    font-family: var(--secondary-font);
+    font-family: var(--paragraph-font);
 } 
 
 .main-btn{
